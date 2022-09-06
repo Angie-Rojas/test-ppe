@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Aplicación</th>
+      <th scope="col">Nombre del parámetro</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let producto of productos$ | async">
+    <tr>
+      <td>{{ producto.aplicacion }}</td>
+      <td>{{ producto.nombreparametro }}</td>
+      <td>{{ producto.descripcion }}</td>
+    </tr>
+  </tbody>
+</table>
